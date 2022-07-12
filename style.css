@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0px 2%;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    float: right;
+    padding: 10px;
+}
+
+nav ul li {
+    padding-left: 90px;
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.button {
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin-left: 100px;
+    background-color: green;
+    float: right;
+}
+/*  */
+
+/* sessoa-mark */
+
+.sessao-mark {
+    margin-top: 140px;
+}
+
+.sessao-mark .container {
+    display: flex;
+}
+
+.infos {
+    width: 60%;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.infos h1 {
+    font-size: 40px;
+}
+
+.infos p {
+    padding-top: 20px;
+    padding-right: 80px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.infos img {
+    margin-top: 10px;
+}
+
+.infos-img {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.infos-img img {
+    width: 100%;
+}
+
+/*  */
+
+/* */
+
+.coments .container {
+    display: flex;
+}
+
+.coment-single {
+    width: 45%;
+    padding: 20px;
+    background-color: bisque;
+    margin: 50px auto;
+}
+
+.coment-single p {
+    width: 80%;
+    font-size: 18px;
+}
+
+.coment-single img {
+    float: right;
+    margin-top: -85px;
+}
+
+.coment-single span {
+    padding-top: 70px;
+}
+
+/*  */
+
+/*  */
+
+.sobre h2 {
+    margin-left: 30px;
+    font-size: 40px;
+    display: inline;
+    border-bottom: 1px solid green;
+}
+
+.wraper-cont {
+    margin-top: 40px;
+    display: flex;
+}
+
+.sobre-single {
+    margin: 10px auto;
+    background-color: white;
+    width: 30%;
+}
+
+.sobre-single:nth-last-of-type(3) {
+    width: 28%;
+}
+
+.sobre-single:nth-last-of-type(2) {
+    width: 28%;
+}
+
+.sobre-single:nth-last-of-type(1) {
+    width: 40%
+}
+
+.sobre-single h1 {
+    background-color: rgb(179, 179, 179);
+    text-align: center;
+    padding: 15px;
+}
+
+.sobre-single p {
+    padding: 10px;
+}
+
+/*  */
+@media screen and (max-width: 900px) {
+
+    nav ul li {
+        padding: 10px;
+    }
+
+    .button {
+        margin: 0;
+    }
+
+    .sessao-mark .container {
+        flex-direction: column;
+    }
+
+    .infos {
+        margin: auto;
+        text-align: center;
+    }
+
+    .infos p {
+        padding: 0;
+    }
+
+    .infos img {
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 861px) {
+    .coments .container {
+        flex-direction: column;
+    }
+
+    .coment-single {
+        width: 70%;
+    }
+
+    .sobre .container {
+        flex-direction: column;
+    }
+
+    .sobre-single:nth-last-of-type(3) {
+        text-align: center;
+        width: 60%;
+    }
+    
+    .sobre-single:nth-last-of-type(2) {
+        margin: 50px auto;
+        text-align: center;
+        width: 60%;
+    }
+    
+    .sobre-single:nth-last-of-type(1) {
+        width: 60%;
+        text-align: center;
+    }
+}
